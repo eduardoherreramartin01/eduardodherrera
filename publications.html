@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publications — Eduardo Herrera</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <style>body { max-width: 900px; margin: auto; }</style>
+  <style>
+    header, nav, main, footer { max-width: 900px; margin: auto; padding: 1rem; }
+    nav ul { justify-content: center; }
+    nav ul li a { padding: 0.5rem 1rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid transparent; }
+    nav ul li a.active, nav ul li a:hover { border-bottom-color: var(--accent); }
+  </style>
 </head>
 <body>
+  <header><h1>Publications & Manuscripts</h1></header>
   <nav>
-    <ul><li><strong>Eduardo Herrera</strong></li></ul>
     <ul>
       <li><a href="index.html">About</a></li>
       <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
       <li><a href="teaching.html">Teaching</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
   <main>
-    <h1>Publications & Manuscripts</h1>
     <ul>
-      <li><em>Probability models for Keno draws</em> — manuscript in progress.</li>
+      <li><em>Probability Models for Keno Draws</em> — undergraduate manuscript (with Matthew McIntosh).</li>
     </ul>
   </main>
+  <footer>© <script>document.write(new Date().getFullYear())</script> Eduardo Herrera</footer>
 </body>
 </html>
+
