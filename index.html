@@ -4,51 +4,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eduardo Herrera — Statistics</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    body { max-width: 900px; margin: auto; }
+    nav ul { justify-content: flex-end; }
+    header { text-align: center; padding: 3rem 1rem; }
+    header img { width: 140px; border-radius: 50%; margin-bottom: 1rem; }
+    footer { text-align: center; margin-top: 3rem; font-size: .9em; color: #666; }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Eduardo Herrera</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
-          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><strong>Eduardo Herrera</strong></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- About -->
-  <main class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-md-3 text-center">
-        <img src="headshot.jpg" class="img-fluid rounded-circle mb-3" alt="Eduardo Herrera" style="max-width:150px;">
-      </div>
-      <div class="col-md-9">
-        <h1 class="fw-bold">Eduardo Herrera</h1>
-        <p class="lead">M.S. student in Statistics, University of Missouri–Columbia</p>
-        <p>
-          I earned dual B.S. degrees in Statistics and Mathematics (<em>Magna Cum Laude</em>) at the University of Missouri.
-          My research interests span <strong>high-dimensional methods</strong>, <strong>Bayesian statistics</strong>, 
-          and <strong>machine learning applications</strong> in economics and business.  
-          I am currently preparing PhD applications for Fall 2026.
-        </p>
-      </div>
-    </div>
+  <!-- Hero -->
+  <header>
+    <img src="headshot.jpg" alt="Eduardo Herrera">
+    <h1>Eduardo Herrera</h1>
+    <p>M.S. in Statistics, University of Missouri–Columbia<br>
+       B.S. in Statistics & Mathematics, Magna Cum Laude</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a Master’s student in Statistics at the University of Missouri–Columbia. 
+        My research interests span <strong>high-dimensional methods</strong>, 
+        <strong>Bayesian statistics</strong>, and <strong>machine learning</strong> applications 
+        in economics and business. 
+        I am preparing PhD applications for Fall 2026.
+      </p>
+    </section>
   </main>
 
-  <footer class="text-center text-muted py-3 border-top">
+  <footer>
     © <script>document.write(new Date().getFullYear())</script> Eduardo Herrera
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+  
 
