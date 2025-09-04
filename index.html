@@ -6,49 +6,52 @@
   <title>Eduardo Herrera — About</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <style>
-    header, nav, main, footer { max-width: 900px; margin: auto; padding: 1rem; }
-    nav ul { justify-content: center; }
-    nav ul li a {
-      padding: 0.5rem 1rem;
-      font-weight: 600;
+    body { max-width: 900px; margin: auto; }
+    header.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid #ddd;
+    }
+    header.navbar h1 {
+      font-size: 1.3rem;
+      margin: 0;
+    }
+    header.navbar nav a {
+      margin-left: 1rem;
       text-decoration: none;
-      border-bottom: 2px solid transparent;
+      font-weight: 600;
     }
-    nav ul li a.active, nav ul li a:hover {
-      border-bottom-color: var(--accent);
+    header.navbar nav a.active {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
     }
-    header img.headshot {
-      width: 150px;
-      border-radius: 50%;
-      display: block;
-      margin: 1rem auto;
-    }
+    main { padding: 2rem 0; }
+    footer { text-align: center; padding: 1rem; font-size: 0.9em; color: #666; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="headshot.jpg" alt="Eduardo Herrera" class="headshot">
+  <!-- Navbar -->
+  <header class="navbar">
     <h1>Eduardo Herrera</h1>
-    <p><em>M.S. in Statistics, University of Missouri–Columbia</em></p>
+    <nav>
+      <a href="index.html" class="active">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
   <main>
     <h2>About Me</h2>
     <p>
-      I am a Master’s student in Statistics at the University of Missouri–Columbia.  
-      I graduated Magna Cum Laude with B.S. degrees in both Statistics and Mathematics.
-      My research interests span <strong>high-dimensional methods</strong>, <strong>Bayesian statistics</strong>, and <strong>machine learning applications</strong> in economics and business.  
+      I am a Master’s student in Statistics at the University of Missouri–Columbia. 
+      I earned B.S. degrees in Statistics and Mathematics (Magna Cum Laude).
+      My research interests include <strong>high-dimensional methods</strong>, 
+      <strong>Bayesian statistics</strong>, and <strong>machine learning</strong> applications in economics and business.  
       I am currently preparing PhD applications for Fall 2026.
     </p>
   </main>
